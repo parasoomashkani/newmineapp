@@ -61,15 +61,12 @@ const sideItem=[
 ]
 
 
-const Sidebar = () => {
+const Sidebar = (props) => {
+  const sideItem= props.id
   return (
     
     <main>
-       <ul>
-      {sideItem.map((playlist) => (
-        <li key={playlist.id}>{playlist.labele}</li>
-      ))}
-    </ul>
+    
     <div className=" flex flex-col bg-clip-border rounded-xl bg-white text-gray-700 h-[calc(100vh-2rem)] w-full max-w-[20rem] p-4 shadow-xl shadow-blue-gray-900/5 absolute inset-y-0 right-0 top-28  ">
        <div className="mb-2 p-4">
        </div> 
